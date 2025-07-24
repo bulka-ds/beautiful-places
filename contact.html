@@ -1,18 +1,18 @@
 <?php
 
-$name = $_POST["name"];
-$email = $_POST["email"];
-$message = $_POST["message"];
+// $name = $_POST["name"];
+// $email = $_POST["email"];
+// $message = $_POST["message"];
 
-$link = mysqli_connect("localhost", "root", "");
-mysqli_select_db($link, "BeautifulPlaces");
+// $link = mysqli_connect("localhost", "root", "");
+// mysqli_select_db($link, "BeautifulPlaces");
 
 
-$sql = "INSERT INTO message(name, email, message1) VALUES ('$name', '$email', '$message')";
-$result=mysqli_query($link, $sql);
+// $sql = "INSERT INTO message(name, email, message1) VALUES ('$name', '$email', '$message')";
+// $result=mysqli_query($link, $sql);
 
-$sql = "SELECT name, email, message1 FROM message ORDER BY id DESC LIMIT 5";
-$result = mysqli_query($link, $sql);
+// $sql = "SELECT name, email, message1 FROM message ORDER BY id DESC LIMIT 5";
+// $result = mysqli_query($link, $sql);
 
 
 ?>
@@ -21,6 +21,7 @@ $result = mysqli_query($link, $sql);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Красивые места мира</title>
+  <link rel="manifest" href="manifest.json">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylee.css">
 </head>
@@ -34,7 +35,7 @@ $result = mysqli_query($link, $sql);
       <a href="russia.html">Россия</a>
       <a href="world.html">Другие страны</a>
       <a href="MyTop.html">Мой топ</a>
-      <a href="contact.php">Контакты</a>
+      <a href="contact.html">Контакты</a>
     </div>
   </nav>
 </header>
@@ -62,7 +63,7 @@ $result = mysqli_query($link, $sql);
     </div>
     
 
-    <form action="contact.php" method="POST">
+    <form action="#" method="POST">
       <h2>Напишите нам</h2>
 
       <div class="form-group">
@@ -84,7 +85,7 @@ $result = mysqli_query($link, $sql);
     </form>
     
 
-      <div class ="contact-info">
+      <!-- <div class ="contact-info">
         <h3>Комментарии пользователей:</h3>
         <?php if ($result->num_rows > 0) : ?>
           <?php while ($row = $result->fetch_assoc()) : ?>
@@ -98,7 +99,7 @@ $result = mysqli_query($link, $sql);
         <?php else : ?>
           <p>Нет комментариев.</p>
         <?php endif; ?>
-      </div>
+      </div> -->
 </main>
 
 
