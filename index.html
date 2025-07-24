@@ -7,20 +7,7 @@
   <title>Красивые места мира</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylee.css">
-  <script>
-  // Регистрация Service Worker
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then((registration) => {
-          console.log('SW зарегистрирован: ', registration.scope);
-        })
-        .catch((error) => {
-          console.log('Ошибка регистрации SW: ', error);
-        });
-    });
-  }
-</script>
+  
 </head>
 <body>
 
@@ -32,7 +19,7 @@
       <a href="russia.html">Россия</a>
       <a href="world.html">Другие страны</a>
       <a href="MyTop.html">Мой топ</a>
-      <a href="contact.php">Контакты</a>
+      <!-- <a href="contact.html">Контакты</a> -->
     </div>
   </nav>
 </header>
@@ -50,5 +37,18 @@
   <p>&copy; 2025 Beautiful places. Все права защищены.</p>
 </footer>
 
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then((registration) => {
+          console.log('SW зарегистрирован: ', registration.scope);
+        })
+        .catch((error) => {
+          console.log('Ошибка регистрации SW: ', error);
+        });
+    });
+  }
+</script>
 </body>
 </html>

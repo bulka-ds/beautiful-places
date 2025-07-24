@@ -2,7 +2,6 @@ const CACHE_NAME = 'beautiful-places-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/contact.html',
   '/russia.html',
   '/world.html',
   '/stylee.css',
@@ -12,10 +11,13 @@ const urlsToCache = [
 self.addEventListener('install', async event => {
     const cache = await caches.open(CACHE_NAME)
     await cache.addAll(urlsToCache)
+    console.log('Service Worker installing');
 
 });
 
-self.addEventListener('activate', event => {})
+self.addEventListener('activate', event => {
+    console.log('Service Worker activate');
+})
   
 
 
