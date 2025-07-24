@@ -37,7 +37,7 @@
     }
 
     .hero {
-      background-image: url("img/background.jpg");
+      background-image: url("background.jpg");
       color: white;
       height: 100%;
       padding: 4rem 2rem;
@@ -48,7 +48,7 @@
     }
 
     .hero2 {
-      background-image: url("img/rus-bg.jpg");
+      background-image: url("rus-bg.jpg");
       color: white;
       height: 300px;
       padding: 4rem 2rem;
@@ -70,7 +70,7 @@
     }
     
     .hero3 {
-      background-image: url("img/world-bg.jpg");
+      background-image: url("world-bg.jpg");
       color: rgb(255, 255, 255);
       height: 300px;
       padding: 4rem 2rem;
@@ -82,7 +82,7 @@
 
 
     .hero4 {
-      background-image: url("img/contact-bg.jpg");
+      background-image: url("contact-bg.jpg");
       color: white;
       height: 200px;
       padding: 4rem 2rem;
@@ -93,7 +93,7 @@
     }
 
     .hero5 {
-      background-image: url("img/mytop.jpg");
+      background-image: url("mytop.jpg");
       color: white;
       height: 200px;
       padding: 4rem 2rem;
