@@ -1,0 +1,65 @@
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="todo.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <title>Красивые места мира</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylee.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Beautiful places</div>
+    <div class="menu">
+      <a href="index.html">Главная</a>
+      <a href="russia.html">Россия</a>
+      <a href="world.html">Другие страны</a>
+      <a href="MyTop.html">Мой топ</a>
+      <a href="contact.php">Контакты</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero5">
+    <span>
+    <h1>Мой Топ</h1>
+    <p>Создавайте свой уникальный топ мест где вы были. Запечатлите самые лучшие моменты путешествий и увековечте память в своем топе Самых красивых мест.</p>
+    </span>
+</section>
+
+  <form name="toDoForm" class="todo-form">
+    <div class="form-row">
+      <!-- Название задачи -->
+      <input name="title" type="text" placeholder="Введите название" required>
+    </div>
+
+    <div class="form-row">
+      <!-- Ссылка на изображение -->
+      <input name="image" type="url" placeholder="Введите URL изображения" required>
+    </div>
+
+    <div class="form-row">
+      <!-- Описание -->
+      <textarea name="description" placeholder="Введите описание"></textarea>
+    </div>
+
+    <button type="button" onclick="addToDo()">Добавить карточку</button>
+  </form>
+
+  <!-- Контейнер для карточек -->
+  <div id="toDoContainer" class="cards-container">
+    <!-- Сюда будут добавляться карточки -->
+  </div>
+
+    </section>
+
+<footer>
+  <p>&copy; 2025 Beautiful places. Все права защищены.</p>
+</footer>
+
+</body>
+</html>

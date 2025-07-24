@@ -1,0 +1,54 @@
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="manifest.json">
+  <title>Красивые места мира</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylee.css">
+  <script>
+  // Регистрация Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then((registration) => {
+          console.log('SW зарегистрирован: ', registration.scope);
+        })
+        .catch((error) => {
+          console.log('Ошибка регистрации SW: ', error);
+        });
+    });
+  }
+</script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Beautiful places</div>
+    <div class="menu">
+      <a href="index.html">Главная</a>
+      <a href="russia.html">Россия</a>
+      <a href="world.html">Другие страны</a>
+      <a href="MyTop.html">Мой топ</a>
+      <a href="contact.php">Контакты</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+    <span>
+    <h1>Откройте самые красивые места мира</h1>
+    <p>Путешествуйте по России и другим странам, открывая потрясающие пейзажи и культуры.</p>
+    <a href="russia.html" class="btn">Исследовать Россию</a>
+    </span>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 Beautiful places. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
